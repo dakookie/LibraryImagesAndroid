@@ -7,13 +7,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/buttonGlide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Glide Library"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPicasso"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/buttonPicasso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Picasso Library"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGlide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCoil"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/buttonCoil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coil Library"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPicasso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

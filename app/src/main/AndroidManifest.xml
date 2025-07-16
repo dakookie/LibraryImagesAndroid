@@ -13,6 +13,15 @@
         android:theme="@style/Theme.LibraryImagesAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".CoilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PicassoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GlideActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
