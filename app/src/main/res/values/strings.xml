@@ -8,5 +8,12 @@
     <string name="nameLibraryP">Picasso</string>
     <string name="descriptionLibraryP">Potente librería de descarga y almacenamiento en caché de imágenes con API sencilla.</string>
     <string name="nameLibraryC">Coil</string>
-    <string name="descriptionLibraryC">Librería de carga de imágenes Kotlin-First con corrutinas y arquitectura moderna.</string>
+    <string name="descriptionLibraryC">Librería de carga de imágenes con corrutinas y arquitectura moderna.</string>
+    <string name="titleC">Coil</string>
+    <string name="nameButtonL">LOAD IMAGE</string>
+    <string name="nameButtonC">CLEAR IMAGEVIEW</string>
+    <string name="titleG">Glide</string>
+    <string name="buttonCI">CLEAR IMAGEVIEW</string>
+    <string name="buttonLI">LOAD IMAGE</string>
+    <string name="titleP">Picasso</string>
 </resources>

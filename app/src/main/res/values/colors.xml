@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="coil">#3B61A0</color>
-    <color name="picasso">#DB3023</color>
+    <color name="picasso">#b95444</color>
     <color name="glide">#088D96</color>
+    <color name="gray">#DEDEDE</color>
 </resources>
