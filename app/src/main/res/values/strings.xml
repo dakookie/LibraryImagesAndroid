@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">LibraryImagesAndroid</string>
+    <string name="title">Librerías de Manipulación de Imágenes</string>
+    <string name="description">Explora diferentes enfoques para la carga y el almacenamiento en caché de imágenes</string>
+    <string name="information">Selecciona una librería para explorar sus características y ejemplos de implementación</string>
+    <string name="nameLibrary">Glide</string>
+    <string name="descriptionLibraryG">Carga de imágenes rápida y eficiente con almacenamiento en caché automático y gestión de memoria.</string>
+    <string name="nameLibraryP">Picasso</string>
+    <string name="descriptionLibraryP">Potente librería de descarga y almacenamiento en caché de imágenes con API sencilla.</string>
+    <string name="nameLibraryC">Coil</string>
+    <string name="descriptionLibraryC">Librería de carga de imágenes Kotlin-First con corrutinas y arquitectura moderna.</string>
 </resources>
