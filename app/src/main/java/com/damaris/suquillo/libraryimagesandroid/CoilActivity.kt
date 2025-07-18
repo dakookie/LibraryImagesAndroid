@@ -67,28 +67,35 @@ class CoilActivity : AppCompatActivity() {
         val errorDrawable = R.drawable.error
         val image = R.drawable.nenas
 
-        imageView.load(image) {
-            placeholder(placeholderDrawable)
-            error(errorDrawable)
-            transformations(RoundedCornersTransformation(30f))
-            crossfade(true)
-            crossfade(1000)
+        // Cargar la imagen en el ImageView usando Coil
+        imageView.load(image) { // Cargar la imagen desde los recursos
+            placeholder(placeholderDrawable) // Drawable de placeholder
+            error(errorDrawable) // Drawable de error
+            transformations(RoundedCornersTransformation(30f)) // Transformación de esquinas redondeadas
+            crossfade(true) // Habilitar crossfade
+            crossfade(1000) // Duración del crossfade en milisegundos
         }
 
-        btnLoadImage.setOnClickListener {
-            val newImageUrl = "https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g" // Otra imagen de ejemplo
-            imageView.load(newImageUrl) {
-                placeholder(placeholderDrawable)
-                error(errorDrawable)
-                transformations(CircleCropTransformation())
-                crossfade(true)
-                crossfade(1000)
+        btnLoadImage.setOnClickListener { // Cargar una nueva imagen al hacer clic en el botón
+            val newImageUrl =
+                "https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g" // Otra imagen de ejemplo
+            imageView.load(newImageUrl) { // Cargar la nueva imagen desde la URL
+                placeholder(placeholderDrawable) // Placeholder mientras se carga
+                error(errorDrawable) // Imagen de error si falla la carga
+                transformations(CircleCropTransformation()) // Transformación de círculo
+                crossfade(true) // Habilitar crossfade
+                crossfade(1000) // Duración del crossfade en milisegundos
             }
         }
 
         btnClearImage.setOnClickListener {
-            imageView.setImageDrawable(null)
+            imageView.load(R.drawable.loadg) { // Carga el placeholder
+                placeholder(R.drawable.loadg) // Drawable de placeholder
+                error(R.drawable.error) // Drawable de error
+                crossfade(true)
+
+            }
+
         }
     }
-
 }

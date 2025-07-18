@@ -59,12 +59,14 @@ class GlideActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Cargar imagen con Glide
         val imageView: ImageView = findViewById(R.id.imageView)
-        val imageUrl = "https://picsum.photos/id/103/200/300"
-        Glide.with(this)
-            .load(imageUrl)
-            .placeholder(R.drawable.loadg)
-            .error(R.drawable.error)
-            .into(imageView)
+        val imageUrl = "https://picsum.photos/id/103/200/300" // URL de la imagen a cargar
+        // Usar Glide para cargar la imagen en el Image View con un placeholder y error
+        Glide.with(this) // Contexto de la actividad
+            .load(imageUrl) // Cargar la imagen desde la URL
+            .placeholder(R.drawable.loadg) // Imagen que se muestra mientras se carga
+            .error(R.drawable.error) // Imagen que se muestra si hay un error al cargar
+            .into(imageView) // Cargar la imagen en el ImageView
     }
 }
